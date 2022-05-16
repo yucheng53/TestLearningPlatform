@@ -71,29 +71,7 @@
 					<form:label class="col-sm-2 col-form-label" path="title">Course Title: </form:label>
 					<form:errors path="title" class="text-danger"></form:errors>
 					<form:input type="text" class="form-control" path="title"></form:input>		
-<<<<<<< HEAD
 					<br>
-=======
-					
-					<form:label path="instructor">Choose Instructor:</form:label>
-                	<form:errors class="alert-danger" path="instructor"/>
-                	<form:select path="instructor">
-                    <c:forEach items="${allTeachers}" var="instructor">
-                        <form:option value="${teacher.id}" label="${teacher.firstName}">
-                        </form:option> 
-                    </c:forEach>
-                	</form:select>
-					<br>
-
-					<form:label class="col-sm-2 col-form-label" path="credit">Credits: </form:label>
-					<form:errors path="credit" class="text-danger"></form:errors>
-					<form:input type="number" class="form-control" path="credit"></form:input>	
-					
-					<form:label class="col-sm-2 col-form-label" path="price">Cost: </form:label>
-					<form:errors path="price" class="text-danger"></form:errors>
-					<form:input type="number" class="form-control" path="price"></form:input>
-
->>>>>>> 6e73b820e7ed40a78731e9b876b2714a22a45d36
 					<form:label class="col-sm-2 col-form-label" path="description">Description: </form:label>
 
 					<form:errors path="description" class="text-danger"></form:errors>
@@ -129,33 +107,12 @@
 						<form:errors path="startDate" class="text-danger"></form:errors>
 						<form:input type="date" class="form-control w-25" path="startDate"></form:input>	
 						
-<<<<<<< HEAD
 						<%-- <form:label class="col-sm-2 col-form-label" path="teacher">Select Professor:</form:label>				
 						<form:select class="form-control w-25" path = "teacher">
 							<c:forEach var = "i" items = "${allTeachers}">
 							<form:option  value="${i.id}">${i.firstName} ${i.lastName}</form:option>
 							</c:forEach>	    	
 						</form:select> --%>
-=======
-					
-					<form:label class="col-sm-2 col-form-label" path="startDate">Start at: </form:label>
-					<form:errors path="startDate" class="text-danger"></form:errors>
-					<form:input type="date" class="form-control" path="startDate"></form:input>	
-					
-					<form:label class="col-sm-2 col-form-label" path="teacher">Select Professor:</form:label>				
-					<form:select path = "teacher">
-	    				<c:forEach var = "i" items = "${allTeachers}">
-	    				<form:option value="${i.id}">${i.firstName} ${i.lastName}</form:option>
-	    				</c:forEach>	    	
-	    			</form:select>
-
-					
-					<div>
-						<a href="/dashboard" class="btn btn-info mt-2">Cancel</a>
-									
-						<input type="submit" class="btn btn-success ms-2 mt-2" value="Submit" />
-					
->>>>>>> 6e73b820e7ed40a78731e9b876b2714a22a45d36
 					</div>
 					
 					

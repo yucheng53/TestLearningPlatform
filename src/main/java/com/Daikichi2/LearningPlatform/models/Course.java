@@ -58,19 +58,19 @@ public class Course {
 //     String instructor,
 // 			Integer credit, Double price, String description, String imgURL, Date startDate, boolean required) {
 // =======
-//   //creating many to one relationship between teachers and courses; 
-//   	@ManyToOne(fetch = FetchType.LAZY)
-//     @JoinColumn(name="user_id")
-//     private User teacher;
+  //creating many to one relationship between teachers and courses; 
+  	@ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name="user_id")
+    private User teacher;
   	
-//   	//creating many to many relationship between students and courses;
-//     @ManyToMany(fetch = FetchType.LAZY)
-//     @JoinTable(
-//             name = "enrollments", 
-//             joinColumns = @JoinColumn(name = "course_id"), 
-//             inverseJoinColumns = @JoinColumn(name = "student_id")
-//         )
-//         private List<User> students;
+  	//creating many to many relationship between students and courses;
+    @ManyToMany(fetch = FetchType.LAZY)
+    @JoinTable(
+            name = "enrollments", 
+            joinColumns = @JoinColumn(name = "course_id"), 
+            inverseJoinColumns = @JoinColumn(name = "student_id")
+        )
+        private List<User> students;
     
 
 		public Course() {};
