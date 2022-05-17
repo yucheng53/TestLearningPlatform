@@ -29,12 +29,12 @@
 					<div class="regi_card">
 						<img class="regimg" src="https://www.seekpng.com/png/full/20-200280_student-national-university-of-sciences-and-technology-teacher.pnghttps://www.seekpng.com/png/full/20-200280_student-national-university-of-sciences-and-technology-teacher.png" class="card-img-top" alt="teacher_regi">
 						<br/>
-						<a  class="btn btn-info mt-5 ms-2" href="/teacher_new">Regist as a teacher</a>
+						<a  class="btn btn-info mt-5 ms-2" href="/teacher_new">Register as a teacher</a>
 					</div>
 					<div class="regi_card">
 						<img class="regimg" src="https://www.nicepng.com/png/full/126-1268312_apply-card-icon-college-student-student-icon.png" class="card-img-top" alt="student_regi">
 						<br/>
-						<a  class="btn btn-warning mt-5 ms-2" href="/student_new">Regist as a student</a>
+						<a  class="btn btn-warning mt-5 ms-2" href="/student_new">Register as a student</a>
 					</div>				
 				</div>
 			</div>
